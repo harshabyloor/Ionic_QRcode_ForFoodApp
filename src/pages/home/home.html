@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      QRCODE SAMPLE
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item class="qrimage">
+       <qr-code [value]="randomString" [size]="200"></qr-code>
+    </ion-item> 
+  
+<h1>
+  <button ion-button color="dark" full round (click)="scan()">Start Scan</button>
+</h1>
+</ion-content>
